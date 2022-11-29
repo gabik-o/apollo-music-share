@@ -7,7 +7,7 @@ import { GET_QUEUED_SONGS } from "./queries";
 
 function getHeaders() {
   const headers = {};
-  const token = window.localStorage.getItem("x-hasura-admin-secret");
+  const token = process.env.API_KEY;
   if (token) {
     headers["x-hasura-admin-secret"] = `${token}`;
   }
