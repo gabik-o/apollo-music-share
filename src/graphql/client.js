@@ -7,7 +7,7 @@ import { GET_QUEUED_SONGS } from "./queries";
 
 function getHeaders() {
   const headers = {};
-  const token = process.env.API_KEY;
+  const token = process.env.REACT_APP_API_KEY;
   if (token) {
     headers["x-hasura-admin-secret"] = `${token}`;
   }
