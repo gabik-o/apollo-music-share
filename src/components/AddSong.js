@@ -128,7 +128,7 @@ function AddSong() {
     <div style={classes.container}>
       <Dialog
         sx={{
-          ".css-d6tvcf-MuiPaper-root-MuiDialog-paper": {
+          "	.MuiDialog-paper": {
             bgcolor: "#121212 !important",
             textAlign: "center !important",
           },
